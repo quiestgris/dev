@@ -16,8 +16,8 @@ jobs:
           MYSQL_PASSWORD: test_password
         ports:
           - 3306:3306
-      mailog:
-        image: mailog/mailog
+      mailhog:
+        image: mailhog/mailhog
         ports:
           - "1025:1025"
           - "8025:8025"

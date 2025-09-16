@@ -14,7 +14,7 @@ final class MailController extends AbstractController {
     #[Route("envoyer-mail", name: "app_email")]
     public function sendMail(MailerInterface $mailer): Response {
         
-        $email = new Email()
+        $email = (new Email())
             ->from("dev@fr.com")
             ->to("dev@test.com")
             ->subject("Hello world")

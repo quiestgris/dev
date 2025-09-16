@@ -16,11 +16,11 @@ jobs:
           MYSQL_PASSWORD: test_password
         ports:
           - 3306:3306
-    mailog:
-      image: mailog/mailog
-      ports:
-        - "1025:1025"
-        - "8025:8025"
+      mailog:
+        image: mailog/mailog
+        ports:
+          - "1025:1025"
+          - "8025:8025"
     steps:
       - uses: action/checkout@v4
       - name: Setup PHP
